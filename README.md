@@ -16,3 +16,5 @@ Steps and notes to make this website:
 9. (pwd: server) mkdir models and create models
 10. (pwd: server) mkdir routes and create routes
 11. (pwd: server) mkdir middleware and create middleware
+
+12. npx create-react-app client
