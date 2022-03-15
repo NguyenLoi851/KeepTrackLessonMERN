@@ -29,6 +29,7 @@ app.use(express.json())
 
 app.use('/api/auth',authRouter)
 app.use('/api/lessons',lessonRouter)
+
 const PORT = 5000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

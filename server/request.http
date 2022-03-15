@@ -19,11 +19,33 @@ Content-Type: application/json
 ###
 POST http://localhost:5000/api/lessons
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNDI0NzR9.yYRM0Oe2zxr6HuJYASF7Iw4rWhCu6wGPqDbyFMIEzek
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
 
 {
-    "title": "go lang",
-    "description":"go on near vbi",
+    "title": "c++",
+    "description":"c++ algorithm",
     "url":"w3school.com",
-    "status":"LEARNING"
+    "status":"TO LEARN"
 }
+
+###
+
+GET http://localhost:5000/api/lessons
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
+
+###
+
+PUT http://localhost:5000/api/lessons/62309edc8113372e1d865f31
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
+
+{
+    "title": "cpp",
+    "description":"cpp tech",
+    "url":"https://w3school.com",
+    "status":"LEARNED"
+}
+
+###
+DELETE http://localhost:5000/api/lessons/62309edc8113372e1d865f31
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
