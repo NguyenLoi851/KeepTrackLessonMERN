@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Loi",
+    "password": "Loi"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Loi",
+    "password": "Loi"
+}
+
+###
+POST http://localhost:5000/api/lessons
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNDI0NzR9.yYRM0Oe2zxr6HuJYASF7Iw4rWhCu6wGPqDbyFMIEzek
+
+{
+    "title": "go lang",
+    "description":"go on near vbi",
+    "url":"w3school.com",
+    "status":"LEARNING"
+}
