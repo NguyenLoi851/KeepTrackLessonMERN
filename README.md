@@ -5,7 +5,7 @@ Steps and notes to make this website:
 4. npm i express jsonwebtoken mongoose dotenv argon2 cors
 (dotenv -> environment variable, argon2 -> hash user's password, cors -> front-end to with back-end)
 5. npm i --save-dev nodemon
-6. change file package.json, field "scripts" add: "server":"nodemon index", after that when we type "npm server", file index.js will automatically run after any changed.
+6. change file package.json, field "scripts" add: "server":"nodemon index", after that when we type "npm run server", file index.js will automatically run after any changed.
 * Install extension REST client to call api instead of using POSTMAN
 7. create file index.js and connect to PORT 5000
 8. set up mongodb 
@@ -18,3 +18,14 @@ Steps and notes to make this website:
 11. (pwd: server) mkdir middleware and create middleware
 
 12. npx create-react-app client
+13. cd client
+* "npm start" to run client automatically
+14. npm i react-bootstrap axios react-router-dom
+15. Change file css
+16. Create folder assets to contain image and add file to this folder
+
+***Notes for code:
+Redirect change to Navigate
+Switch change to Routes
+component change to element
+

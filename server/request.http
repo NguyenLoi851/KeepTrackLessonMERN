@@ -2,8 +2,8 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username": "Loi",
-    "password": "Loi"
+    "username": "LoiLoi",
+    "password": "LoiLoi"
 }
 
 ###
@@ -12,14 +12,14 @@ POST http://localhost:5000/api/auth/login
 Content-Type: application/json
 
 {
-    "username": "Loi",
-    "password": "Loi"
+    "username": "LoiLoi",
+    "password": "LoiLoi"
 }
 
 ###
 POST http://localhost:5000/api/lessons
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRjMzJhZmQ3M2M5ODI4ODM2N2ZmMWEiLCJpYXQiOjE2NDkxNjE2MjZ9.XkdX80EwRKFIrtuQjyqErjMVNM5bt6lfXSvfGNzBuzk
 
 {
     "title": "c++",
@@ -31,13 +31,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwN
 ###
 
 GET http://localhost:5000/api/lessons
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRjMzJhZmQ3M2M5ODI4ODM2N2ZmMWEiLCJpYXQiOjE2NDkxNjE2MjZ9.XkdX80EwRKFIrtuQjyqErjMVNM5bt6lfXSvfGNzBuzk
 
 ###
 
-PUT http://localhost:5000/api/lessons/62309edc8113372e1d865f31
+PUT http://localhost:5000/api/lessons/624c35b72eea9905cfff3763
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRjMzJhZmQ3M2M5ODI4ODM2N2ZmMWEiLCJpYXQiOjE2NDkxNjE2MjZ9.XkdX80EwRKFIrtuQjyqErjMVNM5bt6lfXSvfGNzBuzk
 
 {
     "title": "cpp",
@@ -47,5 +47,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwN
 }
 
 ###
-DELETE http://localhost:5000/api/lessons/62309edc8113372e1d865f31
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjMwNzM4YTFhYmVjZjU1YTlhYmY3NjIiLCJpYXQiOjE2NDczNTM0OTJ9.BXTOMOY0EsONen3BfcGu199gJqR_cAHwLYcq3mgxmTw
+DELETE http://localhost:5000/api/lessons/624c35b72eea9905cfff3763
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjRjMzJhZmQ3M2M5ODI4ODM2N2ZmMWEiLCJpYXQiOjE2NDkxNjE2MjZ9.XkdX80EwRKFIrtuQjyqErjMVNM5bt6lfXSvfGNzBuzk
