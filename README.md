@@ -23,6 +23,10 @@ Steps and notes to make this website:
 14. npm i react-bootstrap axios react-router-dom
 15. Change file css
 16. Create folder assets to contain image and add file to this folder
+17. Create Route of Login and Register
+(Go to Bootwatch to choose theme, copy url and paste in file public/index.html)
+18. Create contexts and reducers folders
+19. Login
 
 ***Notes for code:
 Redirect change to Navigate

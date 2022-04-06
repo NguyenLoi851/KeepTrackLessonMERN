@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require('cors');
 const authRouter = require('./routes/auth')
 const lessonRouter = require('./routes/lesson')
 
@@ -25,10 +26,12 @@ const connectDB = async () => {
 connectDB();
 
 const app = express();
+app.use(cors())
 app.use(express.json())
 
 app.use('/api/auth',authRouter)
 app.use('/api/lessons',lessonRouter)
+
 
 const PORT = 5000;
 

@@ -2,10 +2,12 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from "./components/layout/Landing";
 import Auth from "./views/Auth";
+import AuthContextProvider from './contexts/AuthContext';
 
 function App() {
   return (
-    <Router>
+    <AuthContextProvider>
+      <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
         {/* <Route path="/login" element={<Auth/>}></Route> */}
@@ -13,6 +15,8 @@ function App() {
         <Route path="/register" element={<Auth authRoute={'register'} />} />
       </Routes>
     </Router>
+    </AuthContextProvider>
+    
   );
 }
 
