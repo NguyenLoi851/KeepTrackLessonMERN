@@ -24,7 +24,6 @@ const AuthContextProvider = ({ children }) => {
 					LOCAL_STORAGE_TOKEN_NAME,
 					response.data.accessToken
 				)
-
 			return response.data
 		} catch (error) {
 			if (error.response.data) return error.response.data

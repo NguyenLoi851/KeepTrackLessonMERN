@@ -3,6 +3,22 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 
 module.exports = {
+  //Check if user is logged in
+  loggedIn: async (req, res) => {
+    try {
+      const user = await User.findById(req.userId).select("-password");
+      if (!user)
+        return res
+          .status(400)
+          .json({ success: false, message: "User not found" });
+      res.json({ success: true, user });
+    } catch (error) {
+      console.log(error);
+      res
+        .status(500)
+        .json({ success: false, message: "Internal server error" });
+    }
+  },
   // register
   register: async (req, res) => {
     const { username, password } = req.body;
